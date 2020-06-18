@@ -26,7 +26,7 @@ namespace Assignment2P2C.Web.Controllers
             if (!FileUtils.IsValidFileExtension(fileExtension))
                 return BadRequest("Unknown format.");
 
-            if (FileUtils.IsValidFileSize(file.Length))
+            if (!FileUtils.IsValidFileSize(file.Length))
                 return BadRequest("File size is max 1 MB.");
 
             try

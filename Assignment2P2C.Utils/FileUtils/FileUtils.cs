@@ -21,7 +21,7 @@ namespace Assignment2P2C.Utils.FileUtils
 
         public static bool IsValidFileSize(long fileSize)
         {
-            return fileSize > _maxLength;
+            return _maxLength > fileSize;
         }
     }
 }
