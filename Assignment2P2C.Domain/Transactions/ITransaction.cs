@@ -2,12 +2,12 @@
 
 namespace Assignment2P2C.Domain.Transactions
 {
-    public interface ITransaction : IEntity
+    public interface ITransaction
     {
-        int TransactionId { get; set; }
+        string TransactionId { get; set; }
         double Amount { get; set; }
         string CurrencyCode { get; set; }
-        char Status { get; set; }
+        string Status { get; set; }
         DateTime Date { get; set; }
     }
 }

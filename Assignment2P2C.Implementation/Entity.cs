@@ -1,6 +1,4 @@
-﻿using Assignment2P2C.Domain;
-
-namespace Assignment2P2C.Implementation
+﻿namespace Assignment2P2C.Domain.Implementation
 {
     public abstract class Entity : IEntity
     {

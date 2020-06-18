@@ -1,14 +1,17 @@
 ﻿using Assignment2P2C.Domain.Transactions;
 using System;
+using System.ComponentModel.DataAnnotations;
 
-namespace Assignment2P2C.Implementation.Transactions
+namespace Assignment2P2C.Domain.Implementation.Transactions
 {
-    public class Transaction : Entity, ITransaction
+    public class Transaction : ITransaction
     {
-        public virtual int TransactionId { get; set; }
-        public virtual double Amount { get; set; }
-        public virtual string CurrencyCode { get; set; }
-        public virtual char Status { get; set; }
-        public virtual DateTime Date { get; set; }
+        [Key]
+        [Required, MaxLength(50), StringLength(50)]
+        public string TransactionId { get; set; }
+        public double Amount { get; set; }
+        public string CurrencyCode { get; set; }
+        public string Status { get; set; }
+        public DateTime Date { get; set; }
     }
 }
