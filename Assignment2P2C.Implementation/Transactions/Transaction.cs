@@ -9,9 +9,13 @@ namespace Assignment2P2C.Domain.Implementation.Transactions
         [Key]
         [Required, MaxLength(50), StringLength(50)]
         public string TransactionId { get; set; }
+        [Required]
         public double Amount { get; set; }
+        [Required]
         public string CurrencyCode { get; set; }
+        [Required]
         public string Status { get; set; }
+        [Required]
         public DateTime Date { get; set; }
     }
 }

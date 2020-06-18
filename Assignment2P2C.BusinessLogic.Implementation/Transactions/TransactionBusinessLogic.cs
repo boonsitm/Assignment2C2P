@@ -30,7 +30,7 @@ namespace Assignment2P2C.BusinessLogic.Implementation.Transactions
 
         public ITransaction Add(ITransaction item)
         {
-            throw new System.NotImplementedException();
+            return _repository.Add(item);
         }
 
         public ITransaction Update(ITransaction item)

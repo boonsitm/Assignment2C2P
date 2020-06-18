@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -14,6 +14,7 @@
     <ProjectReference Include="..\Assignment2P2C.Repository\Assignment2P2C.Repository.csproj" />
     <ProjectReference Include="..\Assignment2P2C.IoC\Assignment2P2C.IoC.csproj" />
     <ProjectReference Include="..\Assignment2P2C.Services\Assignment2P2C.Services.csproj" />
+    <ProjectReference Include="..\Assignment2P2C.Utils\Assignment2P2C.Utils.csproj" />
     <ProjectReference Include="..\Assignment2P2C.ViewModels\Assignment2P2C.ViewModels.csproj" />
   </ItemGroup>
 

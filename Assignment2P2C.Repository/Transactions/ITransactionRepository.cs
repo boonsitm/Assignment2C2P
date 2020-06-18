@@ -4,5 +4,6 @@ namespace Assignment2P2C.Repository.Transactions
 {
     public interface ITransactionRepository : IRepository<ITransaction>
     {
+        ITransaction GetByTransactionId(string id);
     }
 }

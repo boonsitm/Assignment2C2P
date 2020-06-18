@@ -2,7 +2,7 @@
 {
     public enum TransactionFileType
     {
-        CSV,
-        XML
+        csv,
+        xml
     }
 }
