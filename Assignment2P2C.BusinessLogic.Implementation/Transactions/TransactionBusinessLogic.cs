@@ -61,7 +61,7 @@ namespace Assignment2P2C.BusinessLogic.Implementation.Transactions
                 }
                 catch (Exception ex)
                 {
-                    _logger.Equals(string.Format("Invalid currency criteria: ", ex.Message));
+                    _logger.Error(string.Format("Invalid currency criteria: ", ex.Message));
                     return new List<ITransaction>();
                 }
                 
@@ -77,7 +77,7 @@ namespace Assignment2P2C.BusinessLogic.Implementation.Transactions
                 }
                 catch (Exception ex)
                 {
-                    _logger.Equals(string.Format("Invalid start date criteria: ", ex.Message));
+                    _logger.Error(string.Format("Invalid start date criteria: ", ex.Message));
                     return new List<ITransaction>();
                 }
             }
@@ -91,7 +91,7 @@ namespace Assignment2P2C.BusinessLogic.Implementation.Transactions
                 }
                 catch (Exception ex)
                 {
-                    _logger.Equals(string.Format("Invalid end date criteria: ", ex.Message));
+                    _logger.Error(string.Format("Invalid end date criteria: ", ex.Message));
                     return new List<ITransaction>();
                 }
             }

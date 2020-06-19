@@ -36,7 +36,6 @@ namespace Assignment2P2C.Utils.CurrencyUtils.Tests
         {
             Assert.Throws<Exception>(
                 () => CurrencyUtils.GetValidCurrencyCode(new List<string> { "USD", "THB" }, "EUR"));
-
         }
     }
 }
