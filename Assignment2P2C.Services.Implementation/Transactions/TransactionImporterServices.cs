@@ -53,7 +53,7 @@ namespace Assignment2P2C.Services.Implementation.Transactions
                 }
                 catch (Exception ex)
                 {
-                    var errMessage = string.Format("Error import transaction id: {0}, {1}", transaction.TransactionId, ex.Message);
+                    var errMessage = $"Error import transaction id: {transaction.TransactionId}, {ex.Message}";
                     _logger.Error(errMessage);
                     messages.Add(errMessage);
                 }

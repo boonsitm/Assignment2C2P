@@ -16,7 +16,7 @@ namespace Assignment2P2C.Utils.StatusUtils
                 "approved" => "A",
                 "failed" => "R",
                 "finished" => "D",
-                _ => throw new Exception(string.Format("Transaction status[{0}] cannot be mapped in CSV.", status)),
+                _ => throw new Exception($"Transaction status[{status}] cannot be mapped in CSV."),
             };
         }
 
@@ -27,7 +27,7 @@ namespace Assignment2P2C.Utils.StatusUtils
                 "approved" => "A",
                 "rejected" => "R",
                 "done" => "D",
-                _ => throw new Exception(string.Format("Transaction status[{0}] cannot be mapped in XML.", status)),
+                _ => throw new Exception($"Transaction status[{status}] cannot be mapped in XML."),
             };
         }
     }

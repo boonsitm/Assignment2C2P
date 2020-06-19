@@ -7,7 +7,7 @@ namespace Assignment2P2C.ViewModels.Transactions
         public TransactionViewModel(ITransaction transaction)
         {
             id = transaction.TransactionId;
-            payment = string.Format("{0} {1}", transaction.Amount.ToString("F2"), transaction.CurrencyCode);
+            payment = $"{transaction.Amount:F2} {transaction.CurrencyCode}";
             status = transaction.Status;
         }
 

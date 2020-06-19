@@ -34,7 +34,7 @@ namespace Assignment2P2C.Utils.CurrencyUtils
         public static string GetValidCurrencyCode(IList<string> listCurrencyCodes, string isoCode)
         {
             return IsExist(listCurrencyCodes, isoCode) ? isoCode.ToUpperInvariant() : 
-                throw new Exception(string.Format("Currency Code[{0}] is invalid", isoCode));
+                throw new Exception($"Currency Code[{isoCode}] is invalid");
         }
     }
 }
