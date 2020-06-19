@@ -5,9 +5,14 @@ namespace Assignment2P2C.Utils.DateTimeUtils
 {
     public static class DateTimeUtils
     {
+        private const string DATETIME_FORMAT = "dd/MM/yyyy";
         private const string DATETIME_CSV_FORMAT = "dd/MM/yyyy hh:mm:ss";
         private const string DATETIME_XML_FORMAT = "yyyy-MM-ddTHH:mm:ss";
 
+        public static DateTime ParseDate(string dateString)
+        {
+            return DateTime.ParseExact(dateString, DATETIME_FORMAT, CultureInfo.InvariantCulture);
+        }
         public static DateTime ParseDate(string dateString, string fileExtension)
         {
             return fileExtension.Equals("csv", StringComparison.InvariantCulture) ? ParseCsvDate(dateString) : ParseXmlDate(dateString);

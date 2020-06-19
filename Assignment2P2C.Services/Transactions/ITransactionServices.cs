@@ -6,6 +6,7 @@ namespace Assignment2P2C.Services.Transactions
     public interface ITransactionServices
     {
         IList<ITransaction> GetAllTransactions();
+        IList<ITransaction> GetTransactionsByCriteria(ITransactionCriteria criteria);
         void InsertTransaction(ITransaction transaction);
     }
 }

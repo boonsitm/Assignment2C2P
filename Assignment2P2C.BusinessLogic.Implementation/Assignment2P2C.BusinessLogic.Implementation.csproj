@@ -7,6 +7,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Assignment2P2C.BusinessLogic\Assignment2P2C.BusinessLogic.csproj" />
     <ProjectReference Include="..\Assignment2P2C.Repository\Assignment2P2C.Repository.csproj" />
+    <ProjectReference Include="..\Assignment2P2C.Utils\Assignment2P2C.Utils.csproj" />
   </ItemGroup>
 
 </Project>

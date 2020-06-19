@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Assignment2P2C.Domain\Assignment2P2C.Domain.csproj" />
+    <ProjectReference Include="..\Assignment2P2C.Implementation\Assignment2P2C.Domain.Implementation.csproj" />
   </ItemGroup>
 
 </Project>

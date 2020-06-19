@@ -17,6 +17,11 @@ namespace Assignment2P2C.Services.Implementation.Transactions
             return _businessLogic.GetAll();
         }
 
+        public IList<ITransaction> GetTransactionsByCriteria(ITransactionCriteria criteria)
+        {
+            return _businessLogic.GetByCriteria(criteria);
+        }
+
         public void InsertTransaction(ITransaction transaction)
         {
             _businessLogic.Add(transaction);

@@ -20,35 +20,16 @@ namespace Assignment2P2C.Web.Controllers
         }
         // GET: api/transactions
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult Get(
+            string currency ="",
+            string startDate = "",
+            string endDate = "",
+            string status = "")
         {
-            IList<ITransaction> result = _transactionServices.GetAllTransactions();
+            var criteria = new TransactionCriteriaViewModel(currency, startDate, endDate, status).Convert();
+
+            IList<ITransaction> result = _transactionServices.GetTransactionsByCriteria(criteria);
             return Ok(result.Select(x => new TransactionViewModel(x)));
-        }
-
-        // GET api/transactions/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/transactions
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/transactions/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/transactions/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
         }
     }
 }
