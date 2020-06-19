@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Assignment2C2P.BusinessLogic\Assignment2C2P.BusinessLogic.csproj" />
+    <ProjectReference Include="..\Assignment2C2P.Services\Assignment2C2P.Services.csproj" />
+    <ProjectReference Include="..\Assignment2C2P.Utils\Assignment2C2P.Utils.csproj" />
+    <ProjectReference Include="..\Assignment2C2P.ViewModels\Assignment2C2P.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>

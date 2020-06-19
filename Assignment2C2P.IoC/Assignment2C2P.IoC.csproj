@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Assignment2C2P.BusinessLogic.Implementation\Assignment2C2P.BusinessLogic.Implementation.csproj" />
+    <ProjectReference Include="..\Assignment2C2P.DataAccess\Assignment2C2P.DataAccess.csproj" />
+    <ProjectReference Include="..\Assignment2C2P.Repository.Implementation\Assignment2C2P.Repository.Implementation.csproj" />
+    <ProjectReference Include="..\Assignment2C2P.Repository\Assignment2C2P.Repository.csproj" />
+    <ProjectReference Include="..\Assignment2C2P.Services.Implementation\Assignment2C2P.Services.Implementation.csproj" />
+    <ProjectReference Include="..\Assignment2C2P.Services\Assignment2C2P.Services.csproj" />
+  </ItemGroup>
+
+</Project>
+  
