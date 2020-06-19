@@ -22,16 +22,6 @@ namespace Assignment2P2C.Repository.Implementation.Transactions
             return GetByTransactionId(entity.TransactionId);
         }
 
-        public void Delete(int internalId)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public ITransaction Get(int internalId)
-        {
-            throw new System.NotImplementedException();
-        }
-
         public IList<ITransaction> GetAll()
         {
             return _context.Transactions.ToList<ITransaction>();
@@ -40,11 +30,6 @@ namespace Assignment2P2C.Repository.Implementation.Transactions
         public ITransaction GetByTransactionId(string id)
         {
             return _context.Transactions.FirstOrDefault(x => x.TransactionId.Equals(id));
-        }
-
-        public ITransaction Update(ITransaction entity)
-        {
-            throw new System.NotImplementedException();
         }
     }
 }

@@ -20,16 +20,6 @@ namespace Assignment2P2C.BusinessLogic.Implementation.Transactions
             _repository = repository;
         }
 
-        public void Delete(long internalId)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public ITransaction Get(long internalId)
-        {
-            throw new System.NotImplementedException();
-        }
-
         public IList<ITransaction> GetAll()
         {
             return _repository.GetAll();
@@ -38,11 +28,6 @@ namespace Assignment2P2C.BusinessLogic.Implementation.Transactions
         public ITransaction Add(ITransaction item)
         {
             return _repository.Add(item);
-        }
-
-        public ITransaction Update(ITransaction item)
-        {
-            throw new System.NotImplementedException();
         }
 
         public IList<ITransaction> GetByCriteria(ITransactionCriteria criteria)
